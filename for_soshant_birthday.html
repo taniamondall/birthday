@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Soshant ♡</title>
+<style>
+:root{--pink:#f7a8c4;--rose:#e86f9b;--deep:#9d426b;--cream:#fff8f8;--ink:#59384b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:linear-gradient(145deg,#fff7fa,#ffe4ef 48%,#fff9f3);overflow-x:hidden}
+button,input{font:inherit}button{cursor:pointer;border:0}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.float-heart{position:absolute;bottom:-40px;opacity:.45;animation:rise linear forwards;color:#ed8eaf}
+@keyframes rise{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+main{position:relative;z-index:1}.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:42px 20px;position:relative}.hero-card{max-width:760px;width:100%;padding:clamp(28px,6vw,66px) clamp(20px,5vw,54px);border:1px solid #fff;background:#ffffffb8;backdrop-filter:blur(12px);border-radius:34px;box-shadow:0 22px 70px #b85d7b20}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;color:var(--rose);font:600 11px Arial,sans-serif}.hero h1{font-size:clamp(48px,10vw,94px);line-height:.95;margin:18px 0;color:#b94f7b;font-weight:normal}.hero p{font-size:clamp(17px,3vw,21px);line-height:1.65;max-width:540px;margin:18px auto 28px}.script{font-style:italic;color:#d16b91}.btn{padding:14px 23px;border-radius:999px;background:linear-gradient(110deg,#ee8eaf,#d96894);color:white;box-shadow:0 9px 22px #d9689435;transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:0 13px 25px #d9689445}.btn.secondary{background:#fff;color:#b94f7b;border:1px solid #f2b6cb;box-shadow:none}
+section{padding:76px 20px;max-width:1100px;margin:auto}.section-head{text-align:center;margin-bottom:34px}.section-head h2{font-size:clamp(32px,6vw,48px);font-weight:normal;color:#b94f7b;margin:8px 0}.section-head p{font:15px/1.6 Arial,sans-serif;color:#8b6477}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.tile,.letter,.memory,.quizbox,.cakebox{background:#ffffffc9;border:1px solid #fff;border-radius:24px;padding:24px;box-shadow:0 12px 35px #b85d7b12}.tile .emoji{font-size:34px}.tile h3,.memory h3{font-size:22px;font-weight:normal;color:#b94f7b;margin:12px 0 8px}.tile p,.memory p{font:14px/1.65 Arial,sans-serif;color:#785b6b}.letter{max-width:760px;margin:auto;padding:clamp(24px,5vw,48px);text-align:center;line-height:1.9;font-size:18px}.letter p{margin:12px 0}.letter .sign{font-style:italic;color:#c45c86;font-size:22px;margin-top:25px}
+.memory{padding:0;overflow:hidden}.memory img{width:100%;height:230px;object-fit:cover;display:block;background:#ffe4ef}.memory .memtext{padding:18px}.upload-wrap{text-align:center;margin:24px 0}.upload-wrap input{max-width:100%;padding:10px;background:#fff;border:1px dashed #e9a6bf;border-radius:14px}
+.openwhen button{width:100%;text-align:left;padding:17px 18px;margin:7px 0;border-radius:16px;background:#fff;color:#a64e75;border:1px solid #f5c5d5}.reveal{display:none;padding:16px 18px;margin:0 0 8px;border-radius:16px;background:#fff5f8;font:15px/1.7 Arial,sans-serif}.reveal.show{display:block}
+.quizbox{max-width:650px;margin:auto;text-align:center}.quizbox h3{font-size:25px;font-weight:normal}.answers{display:grid;gap:10px;margin-top:20px}.answers button{padding:13px;border-radius:14px;background:#fff0f5;color:#98506f;border:1px solid #f5c4d5}.answers button:hover{background:#fbdce8}.feedback{min-height:28px;margin-top:15px;font:15px Arial,sans-serif;color:#b94f7b}
+.cakebox{text-align:center;max-width:650px;margin:auto}.cake{font-size:100px;cursor:pointer;display:inline-block;transition:.2s;filter:drop-shadow(0 10px 8px #c66b8820)}.cake:hover{transform:scale(1.06)}.cake-note{font:14px/1.6 Arial,sans-serif;color:#785b6b}.small{font:12px Arial,sans-serif;color:#9c7889}
+footer{text-align:center;padding:45px 20px 60px;color:#b85b83;font-size:20px}.hidden{display:none!important}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:10}
+@media(max-width:600px){section{padding:58px 16px}.hero-card{border-radius:25px}.tile{padding:20px}}
+</style>
+</head>
+<body>
+<div id="hearts"></div><canvas id="confetti"></canvas>
+<main>
+<header class="hero" id="top">
+ <div class="hero-card">
+  <div class="eyebrow">A little universe made just for you</div>
+  <div style="font-size:35px;margin-top:14px">♡ ✧ ♡</div>
+  <h1>Happy Birthday,<br><span class="script">Soshant</span></h1>
+  <p>Distance may keep us in different places, but today, every little piece of my heart is celebrating <em>you</em>.</p>
+  <button class="btn" onclick="unlock()">Open your surprise ♡</button>
+  <p class="small" style="margin-top:18px">Made with all my love, from my side of the screen to yours.</p>
+ </div>
+</header>
+
+<section id="letter-section">
+ <div class="section-head"><div class="eyebrow">A note from me to you</div><h2>A little love letter</h2><p>Some things deserve more than a birthday text.</p></div>
+ <div class="letter">
+  <p>To my favourite person,</p>
+  <p>Happy birthday, Soshant. I wish I could be right there beside you today — stealing your time, making you laugh, and celebrating every little moment with you.</p>
+  <p>Until I can do that in person, I made you this tiny corner of the internet. I hope it reminds you that you are loved, missed, celebrated, and thought of more often than you know.</p>
+  <p>May this year bring you the happiness you give me, the courage to chase everything you dream of, and a hundred reasons to smile.</p>
+  <p class="sign">Yours, always ♡</p>
+  <p class="small">You can edit this letter in the website file to make it sound even more like you.</p>
+ </div>
+</section>
+
+<section id="memories">
+ <div class="section-head"><div class="eyebrow">Our little gallery</div><h2>Moments I keep close</h2><p>Add your favourite photos below. They stay in this browser while the page is open.</p></div>
+ <div class="upload-wrap"><input id="photoInput" type="file" accept="image/*" multiple><p class="small">Choose photos from your device to fill the polaroid wall.</p></div>
+ <div class="grid" id="photoGrid">
+  <article class="memory"><img alt="A pink placeholder" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='450'%3E%3Crect width='100%25' height='100%25' fill='%23fbe0ea'/%3E%3Ctext x='50%25' y='48%25' text-anchor='middle' font-size='70' fill='%23d77a9c'%3E♡%3C/text%3E%3Ctext x='50%25' y='65%25' text-anchor='middle' font-size='22' fill='%23a65a79'%3EAdd a memory%3C/text%3E%3C/svg%3E"><div class="memtext"><h3>Our favourite moment</h3><p>Every memory with you deserves its own little frame.</p></div></article>
+  <article class="memory"><img alt="A pink placeholder" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='450'%3E%3Crect width='100%25' height='100%25' fill='%23fcebdc'/%3E%3Ctext x='50%25' y='48%25' text-anchor='middle' font-size='70' fill='%23d77a9c'%3E✧%3C/text%3E%3Ctext x='50%25' y='65%25' text-anchor='middle' font-size='22' fill='%23a65a79'%3EYour photo here%3C/text%3E%3C/svg%3E"><div class="memtext"><h3>My happy place</h3><p>Plot twist: it's not a place. It's you.</p></div></article>
+  <article class="memory"><img alt="A pink placeholder" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='450'%3E%3Crect width='100%25' height='100%25' fill='%23f7e5f1'/%3E%3Ctext x='50%25' y='48%25' text-anchor='middle' font-size='70' fill='%23d77a9c'%3E♡%3C/text%3E%3Ctext x='50%25' y='65%25' text-anchor='middle' font-size='22' fill='%23a65a79'%3EOne more memory%3C/text%3E%3C/svg%3E"><div class="memtext"><h3>To many more</h3><p>More laughs, more adventures, more us.</p></div></article>
+ </div>
+</section>
+
+<section id="open-when">
+ <div class="section-head"><div class="eyebrow">For every kind of day</div><h2>Open when...</h2><p>Little messages for the moments when I can't be there in person.</p></div>
+ <div class="openwhen" style="max-width:720px;margin:auto">
+  <button onclick="toggleLetter(0)">💌 Open when you miss me</button><div class="reveal">Close your eyes for a second and imagine the biggest hug. I'm missing you too. Distance is just the space between our locations, never between our hearts. ♡</div>
+  <button onclick="toggleLetter(1)">🌧️ Open when you have a bad day</button><div class="reveal">Take a breath, love. You don't have to figure everything out today. I'm proud of you, even on the days when you don't feel your best.</div>
+  <button onclick="toggleLetter(2)">🌙 Open when you can't sleep</button><div class="reveal">Imagine us talking about absolutely nothing until one of us falls asleep. I hope this little note makes the night feel softer.</div>
+  <button onclick="toggleLetter(3)">🎉 Open when you need a reason to smile</button><div class="reveal">It's your birthday, you're someone's favourite human, and somewhere there's a girl smiling at her screen because she gets to love you. That's three reasons already. ♡</div>
+ </div>
+</section>
+
+<section id="quiz">
+ <div class="section-head"><div class="eyebrow">Let's see what you remember</div><h2>How well do you know us?</h2><p>A tiny quiz. No pressure, birthday boy!</p></div>
+ <div class="quizbox"><div class="small" id="quizCount">QUESTION 1 OF 3</div><h3 id="question">What's my favourite thing about us?</h3><div class="answers" id="answers"></div><div class="feedback" id="feedback"></div><button class="btn secondary hidden" id="nextBtn" onclick="nextQuestion()">Next question →</button><p class="small">You can customise the questions and answers in the HTML file.</p></div>
+</section>
+
+<section id="cake-section">
+ <div class="section-head"><div class="eyebrow">Make a birthday wish</div><h2>A cake, just for you</h2><p>Even from far away, you still get to make a wish.</p></div>
+ <div class="cakebox"><div class="cake" id="cake" onclick="blowCandles()" title="Tap the cake">🎂</div><h3 style="font-weight:normal;color:#b94f7b">Tap the cake to blow out the candles!</h3><p class="cake-note" id="cakeNote">Make a wish, Soshant. I'll be wishing for you too. ♡</p><button class="btn" onclick="celebrate()">One more birthday cheer ✨</button></div>
+</section>
+<footer>Made with love, across every mile. <span class="script">♡</span><div class="small" style="margin-top:10px">Happy birthday, Soshant.</div></footer>
+</main>
+<script>
+function unlock(){document.querySelector('#letter-section').scrollIntoView({behavior:'smooth'});burst()}
+function toggleLetter(i){const els=document.querySelectorAll('.reveal');els[i].classList.toggle('show')}
+const heartBox=document.getElementById('hearts');
+function makeHeart(){const h=document.createElement('span');h.className='float-heart';h.textContent=['♡','♥','✧'][Math.floor(Math.random()*3)];h.style.left=Math.random()*100+'%';h.style.fontSize=(14+Math.random()*24)+'px';h.style.animationDuration=(8+Math.random()*8)+'s';heartBox.appendChild(h);setTimeout(()=>h.remove(),17000)}
+setInterval(makeHeart,850);for(let i=0;i<12;i++)setTimeout(makeHeart,i*180);
+document.getElementById('photoInput').addEventListener('change',e=>{const grid=document.getElementById('photoGrid');[...e.target.files].forEach(file=>{if(!file.type.startsWith('image/'))return;const url=URL.createObjectURL(file);const card=document.createElement('article');card.className='memory';const img=document.createElement('img');img.src=url;img.alt='A memory';const body=document.createElement('div');body.className='memtext';const title=document.createElement('h3');title.textContent='A moment with you ♡';const p=document.createElement('p');p.textContent=file.name;body.append(title,p);card.append(img,body);grid.prepend(card)})});
+const questions=[
+ {q:"What's my favourite thing about us?",a:["The way we make each other laugh","Who wins arguments","Our screen time"],correct:0,why:"Exactly! The little laughs are my favourite. ♡"},
+ {q:"What do I wish for most today?",a:["A fancy gift","More time together","A day off"],correct:1,why:"One day, no screens between us. Just us. ♡"},
+ {q:"What's your birthday superpower?",a:["Making my day better","Stealing my snacks","Being stubborn"],correct:0,why:"Correct. You make ordinary days feel special."}
+];let qi=0;
+function renderQuestion(){const q=questions[qi];document.getElementById('quizCount').textContent=`QUESTION ${qi+1} OF ${questions.length}`;document.getElementById('question').textContent=q.q;document.getElementById('feedback').textContent='';document.getElementById('nextBtn').classList.add('hidden');const a=document.getElementById('answers');a.innerHTML='';q.a.forEach((v,i)=>{const b=document.createElement('button');b.textContent=v;b.onclick=()=>answer(i);a.appendChild(b)})}
+function answer(i){const q=questions[qi];document.querySelectorAll('#answers button').forEach((b,n)=>{b.disabled=true;if(n===q.correct)b.style.background='#f8d5e2'});document.getElementById('feedback').textContent=i===q.correct?q.why:'Cute try! The answer is: '+q.a[q.correct]+' ♡';document.getElementById('nextBtn').classList.remove('hidden');document.getElementById('nextBtn').textContent=qi===questions.length-1?'Play again ↻':'Next question →'}
+function nextQuestion(){qi=(qi+1)%questions.length;renderQuestion()}
+renderQuestion();
+let blown=false;function blowCandles(){blown=!blown;document.getElementById('cake').textContent=blown?'🍰':'🎂';document.getElementById('cakeNote').textContent=blown?'Wish sent straight to the universe. I hope it comes true. ♡':'Make a wish, Soshant. I’ll be wishing for you too. ♡';if(blown)burst()}
+const canvas=document.getElementById('confetti'),ctx=canvas.getContext('2d');let bits=[];function resize(){canvas.width=innerWidth;canvas.height=innerHeight}addEventListener('resize',resize);resize();
+function burst(){for(let i=0;i<130;i++)bits.push({x:innerWidth/2+(Math.random()-.5)*180,y:innerHeight*.3,vx:(Math.random()-.5)*8,vy:Math.random()*-8-2,size:3+Math.random()*5,life:80+Math.random()*35,rot:Math.random()*6})}
+function celebrate(){burst();document.getElementById('cakeNote').textContent='HAPPIEST BIRTHDAY, SOSHANT! Sending you a million hugs. 💗'}
+function animate(){ctx.clearRect(0,0,canvas.width,canvas.height);bits=bits.filter(b=>b.life-->0);bits.forEach(b=>{b.x+=b.vx;b.y+=b.vy;b.vy+=.12;b.rot+=.08;ctx.save();ctx.translate(b.x,b.y);ctx.rotate(b.rot);ctx.fillStyle=['#ef8fb0','#f7c5d5','#d66b96','#f4d7b5'][Math.floor(Math.random()*4)];ctx.fillRect(-b.size/2,-b.size/2,b.size,b.size*1.5);ctx.restore()});requestAnimationFrame(animate)}animate();
+</script>
+</body></html>
